@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8sp"
+    android:orientation="vertical"
+    tools:context=".YesFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Policy Create"
+                android:textSize="20dp"
+                android:padding="8dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your mobile number"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your full name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your email address"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle Registration Number (e.g LA-27-1234)"/>
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration Number (e.g. MH-12-AB-1234) or Engine Number (Last 5 digit)"/>
+
+
+            <Button
+                android:id="@+id/freeQuota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0b9e0e"
+                android:text="Get My Free Quota"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
