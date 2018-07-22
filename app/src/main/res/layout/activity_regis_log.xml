@@ -254,6 +254,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"/>
                 <Button
+                    android:id="@+id/regCancelBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cancel"
@@ -263,6 +264,7 @@
                     android:textSize="20dp"
                     android:layout_gravity="center"/>
                 <Button
+                    android:id="@+id/regSignUpBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sign up"
@@ -270,7 +272,8 @@
                     android:textColor="@android:color/white"
                     android:textSize="20dp"
                     android:textAllCaps="false"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:onClick="onClickSignUp"/>
 
             </LinearLayout>
 
