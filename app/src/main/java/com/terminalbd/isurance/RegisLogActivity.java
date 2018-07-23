@@ -9,6 +9,7 @@ import android.widget.Button;
 public class RegisLogActivity extends AppCompatActivity {
 
     Button cancleBtn;
+    Button signUpBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +18,15 @@ public class RegisLogActivity extends AppCompatActivity {
     }
 
     public void onClickSignUp(View view) {
+        Intent intent = new Intent(this, PolicyAndPersonalActivity.class);
+        signUpBtn = findViewById(R.id.regSignUpBtn);
+        startActivity(intent);
 
     }
 
-    /*public void onClickCancle(View view) {
-        Intent intent = new Intent(this, YesFragment.class);
+    public void onClickCancle(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         cancleBtn = findViewById(R.id.regCancelBtn);
         startActivity(intent);
-    }*/
+    }
 }

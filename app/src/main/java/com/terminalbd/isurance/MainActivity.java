@@ -25,12 +25,18 @@ public class MainActivity extends AppCompatActivity{
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
 
         adapter = new TabAdapter(getSupportFragmentManager());
-        adapter.addFragment(new YesFragment(), "Yes");
-        adapter.addFragment(new NoFragment(), "No");
+        adapter.addFragment(new YesFragment(), "");
+        adapter.addFragment(new NoFragment(), "");
+        adapter.addFragment(new ThreeFragment(),"");
 
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.bus);
+        tabLayout.getTabAt(1).setIcon(R.drawable.car);
+        tabLayout.getTabAt(2).setIcon(R.drawable.mini_car);
+
 
 
 
